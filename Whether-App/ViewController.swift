@@ -16,7 +16,20 @@ class ViewController: UIViewController {
     
     let latitude = 12.23
     let longitude = 23.54
-    ApiManger.getWhether(at: (latitude, longitude))
+        ApiManger.getWhether(at: (latitude, longitude)) {value, error in
+            guard let value = value else {
+                if let error = error {
+                    print(error.localizedDescription)
+                }else{
+                    print("sorry no description")
+                  
+                }
+                self.view.backgroundColor = .red
+                return
+            }
+            print(value)
+            self.view.backgroundColor = .green
+        }
     }
 }
 

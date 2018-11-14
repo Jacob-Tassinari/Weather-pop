@@ -11,15 +11,17 @@ import Alamofire
 import SwiftyJSON
 
 struct ApiManger {
-    static func getWhether(at location: location){
+    static func getWhether(at location: location, onCompplete:
+        @escaping (String?,Error?) -> Void){
         let root = "https://api.darksky.net/forecast/"
         let key = APIKeys.DarkSky
         let url = "\(root)\(key)/\(location.latitude),\(location.longitude)"
         Alamofire.request(url).responseJSON { response in
             switch response.result{
             case .success(let value):
-                print(value)
+                onCompplete("\(value)", nil)
             case .failure(let error):
+                onCompplete(nil, error)
                 print(error.localizedDescription)
             }
         }
