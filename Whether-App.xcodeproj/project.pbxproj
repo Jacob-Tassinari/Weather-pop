@@ -13,6 +13,9 @@
 		86454459219CA175007C963B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86454457219CA175007C963B /* Main.storyboard */; };
 		8645445B219CA176007C963B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8645445A219CA176007C963B /* Assets.xcassets */; };
 		8645445E219CA176007C963B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8645445C219CA176007C963B /* LaunchScreen.storyboard */; };
+		86454466219CA884007C963B /* api-keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86454465219CA884007C963B /* api-keys.swift */; };
+		86454468219CAA20007C963B /* location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86454467219CAA20007C963B /* location.swift */; };
+		8645446A219CAAE0007C963B /* api-Manger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86454469219CAAE0007C963B /* api-Manger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		8645445A219CA176007C963B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8645445D219CA176007C963B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8645445F219CA176007C963B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86454465219CA884007C963B /* api-keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "api-keys.swift"; sourceTree = "<group>"; };
+		86454467219CAA20007C963B /* location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = location.swift; sourceTree = "<group>"; };
+		86454469219CAAE0007C963B /* api-Manger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "api-Manger.swift"; sourceTree = "<group>"; };
 		A8B05EF3C2C231A9BDC7FC66 /* Pods-Whether-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Whether-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Whether-App/Pods-Whether-App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,12 +84,15 @@
 		86454452219CA175007C963B /* Whether-App */ = {
 			isa = PBXGroup;
 			children = (
+				86454465219CA884007C963B /* api-keys.swift */,
 				86454453219CA175007C963B /* AppDelegate.swift */,
 				86454455219CA175007C963B /* ViewController.swift */,
 				86454457219CA175007C963B /* Main.storyboard */,
 				8645445A219CA176007C963B /* Assets.xcassets */,
 				8645445C219CA176007C963B /* LaunchScreen.storyboard */,
 				8645445F219CA176007C963B /* Info.plist */,
+				86454467219CAA20007C963B /* location.swift */,
+				86454469219CAAE0007C963B /* api-Manger.swift */,
 			);
 			path = "Whether-App";
 			sourceTree = "<group>";
@@ -204,6 +213,9 @@
 			files = (
 				86454456219CA175007C963B /* ViewController.swift in Sources */,
 				86454454219CA175007C963B /* AppDelegate.swift in Sources */,
+				86454468219CAA20007C963B /* location.swift in Sources */,
+				86454466219CA884007C963B /* api-keys.swift in Sources */,
+				8645446A219CAAE0007C963B /* api-Manger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
